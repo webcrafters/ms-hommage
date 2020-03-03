@@ -10,6 +10,13 @@ import { LandingShowcaseComponent } from './landing-page/landing-showcase/landin
 import { LandingCardsComponent } from './landing-page/landing-cards/landing-cards.component';
 import { LandingBottomComponent } from './landing-page/landing-bottom/landing-bottom.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule} from '@angular/material/button';
+import { AppCaseComponent } from './app-case/app-case.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -18,13 +25,20 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     LandingNavComponent,
     LandingShowcaseComponent,
     LandingCardsComponent,
-    LandingBottomComponent
+    LandingBottomComponent,
+    AppCaseComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

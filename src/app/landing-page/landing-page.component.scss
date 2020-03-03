@@ -1,15 +1,16 @@
 // says: apply this css to the present component's top-level DOM container
 // (the one which has the component's name in its tag)
-:host {
-  // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  // background: #fff;
-  // color: #000;
-  // font-size: 15px;
-  // line-height: 1.5;
+:host .wrapper {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.5;
+  position: relative;
 }
 
 // says: apply this css to all 'a' elements that appear within :host or any of its children
-:host::ng-deep {
+:host::ng-deep .wrapper {
   a {
     color: #262626;
     text-decoration: none;
@@ -32,7 +33,7 @@
   display: none;
 }
 
-@media(max-width: 700px) {
+@media(max-width: 900px) {
   .menu-btn {
     display: block;
   }

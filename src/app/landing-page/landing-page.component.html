@@ -1,10 +1,12 @@
-<div class="menu-btn" (click)="toggleShowMenu()">
-  <i class="fas fa-bars fa-2x"></i>
+<div class="wrapper">
+  <div class="menu-btn" (click)="toggleShowMenu()">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
+  <div class="container">
+    <app-landing-nav [showMenu]="showMenu"></app-landing-nav>
+    <app-landing-showcase></app-landing-showcase>
+    <app-landing-cards></app-landing-cards>
+  </div>
+  <app-landing-bottom></app-landing-bottom>
 </div>
-<div class="container">
-  <app-landing-nav [showMenu]="showMenu"></app-landing-nav>
-  <app-landing-showcase></app-landing-showcase>
-  <app-landing-cards></app-landing-cards>
-</div>
-<app-landing-bottom></app-landing-bottom>
 
