@@ -9,6 +9,7 @@ import { LandingNavComponent } from './landing-page/landing-nav/landing-nav.comp
 import { LandingShowcaseComponent } from './landing-page/landing-showcase/landing-showcase.component';
 import { LandingCardsComponent } from './landing-page/landing-cards/landing-cards.component';
 import { LandingBottomComponent } from './landing-page/landing-bottom/landing-bottom.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { LandingBottomComponent } from './landing-page/landing-bottom/landing-bo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

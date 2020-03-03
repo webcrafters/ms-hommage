@@ -1,11 +1,11 @@
 // says: apply this css to the present component's top-level DOM container
 // (the one which has the component's name in its tag)
 :host {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #fff;
-  color: #000;
-  font-size: 15px;
-  line-height: 1.5;
+  // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  // background: #fff;
+  // color: #000;
+  // font-size: 15px;
+  // line-height: 1.5;
 }
 
 // says: apply this css to all 'a' elements that appear within :host or any of its children
