@@ -48,7 +48,8 @@
 
       <div class="row">
         <div class="col">
-          <mat-checkbox>I understand that I must give positive feedback
+          <mat-checkbox
+            formControlName="terms">I understand that I must give positive feedback
             <button mat-mini-fab
               matTooltip="... or else Microsoft will follow me everywhere I go forever and ever"
               matTooltipClass="or-else-tooltip">?</button>
@@ -58,12 +59,12 @@
 
       <div class="row">
         <div class="col">
-          <mat-checkbox>Contact me about open positions</mat-checkbox>
+          <mat-checkbox>Contact me about jobs at Microsoft</mat-checkbox>
         </div>
       </div>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" type="submit">Submit</button>
+      <button mat-raised-button color="primary" type="submit" [disabled]="!checkedUnderstand">Submit</button>
     </mat-card-actions>
   </mat-card>
 </form>

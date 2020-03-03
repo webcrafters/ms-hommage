@@ -21,7 +21,7 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatCardModule } from '@angular/material/card';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FeedbackPageComponent } from './feedback-page/feedback-page.component';
 import { FeedbackComponent } from './feedback-page/feedback/feedback.component';
 import { MatCheckboxModule} from '@angular/material/checkbox';
@@ -55,6 +55,7 @@ import { MatTooltipModule } from '@angular/material/tooltip'
     MatRadioModule,
     MatCardModule,
     ReactiveFormsModule,
+    FormsModule,
     MatCheckboxModule,
     MatTooltipModule
   ],
