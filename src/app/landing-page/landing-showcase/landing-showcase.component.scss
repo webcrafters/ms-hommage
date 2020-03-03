@@ -19,7 +19,7 @@
 
 .showcase button {
   margin-top: 20px;
-  a {
-    color: white;
-  }
+}
+.showcase button:hover {
+  opacity: 0.9;
 }

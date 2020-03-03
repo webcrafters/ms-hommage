@@ -1,0 +1,50 @@
+.full-width {
+  width: 100%;
+}
+
+.feedback-card {
+  min-width: 120px;
+  margin: 20px auto;
+  padding: 2em;
+}
+
+.mat-radio-button {
+  display: block;
+  margin: 5px 0;
+}
+
+::ng-deep .or-else-tooltip {
+  background-color: rgb(226, 226, 226);
+  color: red !important;
+  font-size: 1em;
+}
+
+:host::ng-deep .row .col .mat-mini-fab {
+  margin-left: .5em;
+  cursor: default;
+
+  .mat-button-wrapper {
+    padding: 0;
+    line-height: 1em;
+  }
+
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.col:last-child {
+  margin-right: 0;
+}

@@ -17,6 +17,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatCardModule } from '@angular/material/card';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FeedbackPageComponent } from './feedback-page/feedback-page.component';
+import { FeedbackComponent } from './feedback-page/feedback/feedback.component';
+import { MatCheckboxModule} from '@angular/material/checkbox';
+import { MatTooltipModule } from '@angular/material/tooltip'
 
 @NgModule({
   declarations: [
@@ -26,7 +35,9 @@ import { MatListModule } from '@angular/material/list';
     LandingShowcaseComponent,
     LandingCardsComponent,
     LandingBottomComponent,
-    AppCaseComponent
+    AppCaseComponent,
+    FeedbackComponent,
+    FeedbackPageComponent
   ],
   imports: [
     BrowserModule,
@@ -38,7 +49,14 @@ import { MatListModule } from '@angular/material/list';
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
-    MatListModule
+    MatListModule,
+    MatInputModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCardModule,
+    ReactiveFormsModule,
+    MatCheckboxModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]
