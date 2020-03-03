@@ -1,0 +1,24 @@
+{
+  "link_sections": [
+    {
+      "title": "What's new",
+      "items": [
+        {"text": "Surface Pro X", "href": "#"},
+        {"text": "Surface Laptop 3", "href": "#"},
+        {"text": "Surface Pro 7", "href": "#"},
+        {"text": "Windows 10 apps", "href": "#"},
+        {"text": "Office apps", "href": "#"}
+      ]
+    },
+    {
+      "title": "Microsoft Store",
+      "items": [
+        {"text": "Account Profile", "href": "#"},
+        {"text": "Download Center", "href": "#"},
+        {"text": "Microsoft Store Support", "href": "#"},
+        {"text": "Returns", "href": "#"},
+        {"text": "Older tracking", "href": "#"}
+      ]
+    }
+  ]
+}

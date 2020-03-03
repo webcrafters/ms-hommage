@@ -1,21 +1,11 @@
 <!-- Links -->
 <section class="links">
   <div class="links-inner">
-    <ul>
-      <li><h3>What's New</h3></li>
-      <li><a href="#">Surface Pro X</a></li>
-      <li><a href="#">Surface Laptop 3</a></li>
-      <li><a href="#">Surface Pro 7</a></li>
-      <li><a href="#">Windows 10 apps</a></li>
-      <li><a href="#">Office apps</a></li>
-    </ul>
-    <ul>
-      <li><h3>Microsoft Store</h3></li>
-      <li><a href="#">Account Profile</a></li>
-      <li><a href="#">Download Center</a></li>
-      <li><a href="#">Microsoft Store support</a></li>
-      <li><a href="#">Returns</a></li>
-      <li><a href="#">Older tracking</a></li>
+    <ul *ngFor="let section of sections$ | async">
+      <li><h3>{{section.title}}</h3></li>
+      <li *ngFor="let item of section.items">
+        <a href={{item.href}}>{{item.text}}</a>
+      </li>
     </ul>
   </div>
 </section>
