@@ -25,7 +25,12 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FeedbackPageComponent } from './feedback-page/feedback-page.component';
 import { FeedbackComponent } from './feedback-page/feedback/feedback.component';
 import { MatCheckboxModule} from '@angular/material/checkbox';
-import { MatTooltipModule } from '@angular/material/tooltip'
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { GithubGloryPageComponent } from './github-glory-page/github-glory-page.component';
+import { TopUsersComponent } from './github-glory-page/top-users/top-users.component';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort'
 
 @NgModule({
   declarations: [
@@ -37,7 +42,9 @@ import { MatTooltipModule } from '@angular/material/tooltip'
     LandingBottomComponent,
     AppCaseComponent,
     FeedbackComponent,
-    FeedbackPageComponent
+    FeedbackPageComponent,
+    GithubGloryPageComponent,
+    TopUsersComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +64,10 @@ import { MatTooltipModule } from '@angular/material/tooltip'
     ReactiveFormsModule,
     FormsModule,
     MatCheckboxModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
