@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: 'ms-home', component: LandingPageComponent },
   { path: 'feedback', component: FeedbackPageComponent },
   { path: 'github', component: GithubGloryPageComponent },
-  { path: '',
+  { path: '*',
     redirectTo: '/ms-home',
     pathMatch: 'full'
   }
